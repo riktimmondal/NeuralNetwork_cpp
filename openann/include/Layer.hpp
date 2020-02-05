@@ -1,5 +1,5 @@
-#ifndef _LAYER_HPP_
-#define _LAYER_HPP_
+#ifndef _LAYER_
+#define _LAYER_
 
 #include <iostream>
 #include <vector>
