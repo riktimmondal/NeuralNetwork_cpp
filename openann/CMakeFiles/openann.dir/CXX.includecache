@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+/home/riktim/Music/NeuralNetwork_cpp/openann/include/Layer.hpp
+iostream
+-
+vector
+-
+Neuron.hpp
+/home/riktim/Music/NeuralNetwork_cpp/openann/include/Neuron.hpp
+Matrix.hpp
+/home/riktim/Music/NeuralNetwork_cpp/openann/include/Matrix.hpp
+
 /home/riktim/Music/NeuralNetwork_cpp/openann/include/Matrix.hpp
 iostream
 -
@@ -14,15 +24,33 @@ vector
 random
 -
 
+/home/riktim/Music/NeuralNetwork_cpp/openann/include/NeuralNetwork.hpp
+iostream
+-
+Matrix.hpp
+/home/riktim/Music/NeuralNetwork_cpp/openann/include/Matrix.hpp
+Layer.hpp
+/home/riktim/Music/NeuralNetwork_cpp/openann/include/Layer.hpp
+vector
+-
+
 /home/riktim/Music/NeuralNetwork_cpp/openann/include/Neuron.hpp
 iostream
 -
 math.h
 -
 
+/home/riktim/Music/NeuralNetwork_cpp/openann/src/Layer.cpp
+../include/Layer.hpp
+/home/riktim/Music/NeuralNetwork_cpp/openann/include/Layer.hpp
+
 /home/riktim/Music/NeuralNetwork_cpp/openann/src/Matrix.cpp
 ../include/Matrix.hpp
 /home/riktim/Music/NeuralNetwork_cpp/openann/include/Matrix.hpp
+
+/home/riktim/Music/NeuralNetwork_cpp/openann/src/NeuralNetwork.cpp
+../include/NeuralNetwork.hpp
+/home/riktim/Music/NeuralNetwork_cpp/openann/include/NeuralNetwork.hpp
 
 /home/riktim/Music/NeuralNetwork_cpp/openann/src/Neuron.cpp
 ../include/Neuron.hpp
@@ -35,4 +63,6 @@ iostream
 /home/riktim/Music/NeuralNetwork_cpp/openann/include/Neuron.hpp
 ../include/Matrix.hpp
 /home/riktim/Music/NeuralNetwork_cpp/openann/include/Matrix.hpp
+../include/NeuralNetwork.hpp
+/home/riktim/Music/NeuralNetwork_cpp/openann/include/NeuralNetwork.hpp
 

@@ -129,11 +129,61 @@ CMakeFiles/openann.dir/src/Matrix.cpp.o.provides: CMakeFiles/openann.dir/src/Mat
 CMakeFiles/openann.dir/src/Matrix.cpp.o.provides.build: CMakeFiles/openann.dir/src/Matrix.cpp.o
 
 
+CMakeFiles/openann.dir/src/Layer.cpp.o: CMakeFiles/openann.dir/flags.make
+CMakeFiles/openann.dir/src/Layer.cpp.o: src/Layer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/riktim/Music/NeuralNetwork_cpp/openann/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/openann.dir/src/Layer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/openann.dir/src/Layer.cpp.o -c /home/riktim/Music/NeuralNetwork_cpp/openann/src/Layer.cpp
+
+CMakeFiles/openann.dir/src/Layer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openann.dir/src/Layer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/riktim/Music/NeuralNetwork_cpp/openann/src/Layer.cpp > CMakeFiles/openann.dir/src/Layer.cpp.i
+
+CMakeFiles/openann.dir/src/Layer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openann.dir/src/Layer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/riktim/Music/NeuralNetwork_cpp/openann/src/Layer.cpp -o CMakeFiles/openann.dir/src/Layer.cpp.s
+
+CMakeFiles/openann.dir/src/Layer.cpp.o.requires:
+
+.PHONY : CMakeFiles/openann.dir/src/Layer.cpp.o.requires
+
+CMakeFiles/openann.dir/src/Layer.cpp.o.provides: CMakeFiles/openann.dir/src/Layer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/openann.dir/build.make CMakeFiles/openann.dir/src/Layer.cpp.o.provides.build
+.PHONY : CMakeFiles/openann.dir/src/Layer.cpp.o.provides
+
+CMakeFiles/openann.dir/src/Layer.cpp.o.provides.build: CMakeFiles/openann.dir/src/Layer.cpp.o
+
+
+CMakeFiles/openann.dir/src/NeuralNetwork.cpp.o: CMakeFiles/openann.dir/flags.make
+CMakeFiles/openann.dir/src/NeuralNetwork.cpp.o: src/NeuralNetwork.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/riktim/Music/NeuralNetwork_cpp/openann/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/openann.dir/src/NeuralNetwork.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/openann.dir/src/NeuralNetwork.cpp.o -c /home/riktim/Music/NeuralNetwork_cpp/openann/src/NeuralNetwork.cpp
+
+CMakeFiles/openann.dir/src/NeuralNetwork.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openann.dir/src/NeuralNetwork.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/riktim/Music/NeuralNetwork_cpp/openann/src/NeuralNetwork.cpp > CMakeFiles/openann.dir/src/NeuralNetwork.cpp.i
+
+CMakeFiles/openann.dir/src/NeuralNetwork.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openann.dir/src/NeuralNetwork.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/riktim/Music/NeuralNetwork_cpp/openann/src/NeuralNetwork.cpp -o CMakeFiles/openann.dir/src/NeuralNetwork.cpp.s
+
+CMakeFiles/openann.dir/src/NeuralNetwork.cpp.o.requires:
+
+.PHONY : CMakeFiles/openann.dir/src/NeuralNetwork.cpp.o.requires
+
+CMakeFiles/openann.dir/src/NeuralNetwork.cpp.o.provides: CMakeFiles/openann.dir/src/NeuralNetwork.cpp.o.requires
+	$(MAKE) -f CMakeFiles/openann.dir/build.make CMakeFiles/openann.dir/src/NeuralNetwork.cpp.o.provides.build
+.PHONY : CMakeFiles/openann.dir/src/NeuralNetwork.cpp.o.provides
+
+CMakeFiles/openann.dir/src/NeuralNetwork.cpp.o.provides.build: CMakeFiles/openann.dir/src/NeuralNetwork.cpp.o
+
+
 # Object files for target openann
 openann_OBJECTS = \
 "CMakeFiles/openann.dir/src/main.cpp.o" \
 "CMakeFiles/openann.dir/src/Neuron.cpp.o" \
-"CMakeFiles/openann.dir/src/Matrix.cpp.o"
+"CMakeFiles/openann.dir/src/Matrix.cpp.o" \
+"CMakeFiles/openann.dir/src/Layer.cpp.o" \
+"CMakeFiles/openann.dir/src/NeuralNetwork.cpp.o"
 
 # External object files for target openann
 openann_EXTERNAL_OBJECTS =
@@ -141,9 +191,11 @@ openann_EXTERNAL_OBJECTS =
 openann: CMakeFiles/openann.dir/src/main.cpp.o
 openann: CMakeFiles/openann.dir/src/Neuron.cpp.o
 openann: CMakeFiles/openann.dir/src/Matrix.cpp.o
+openann: CMakeFiles/openann.dir/src/Layer.cpp.o
+openann: CMakeFiles/openann.dir/src/NeuralNetwork.cpp.o
 openann: CMakeFiles/openann.dir/build.make
 openann: CMakeFiles/openann.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/riktim/Music/NeuralNetwork_cpp/openann/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable openann"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/riktim/Music/NeuralNetwork_cpp/openann/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable openann"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openann.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -154,6 +206,8 @@ CMakeFiles/openann.dir/build: openann
 CMakeFiles/openann.dir/requires: CMakeFiles/openann.dir/src/main.cpp.o.requires
 CMakeFiles/openann.dir/requires: CMakeFiles/openann.dir/src/Neuron.cpp.o.requires
 CMakeFiles/openann.dir/requires: CMakeFiles/openann.dir/src/Matrix.cpp.o.requires
+CMakeFiles/openann.dir/requires: CMakeFiles/openann.dir/src/Layer.cpp.o.requires
+CMakeFiles/openann.dir/requires: CMakeFiles/openann.dir/src/NeuralNetwork.cpp.o.requires
 
 .PHONY : CMakeFiles/openann.dir/requires
 

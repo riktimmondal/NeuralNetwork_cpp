@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/openann.dir/src/main.cpp.o"
   "CMakeFiles/openann.dir/src/Neuron.cpp.o"
   "CMakeFiles/openann.dir/src/Matrix.cpp.o"
+  "CMakeFiles/openann.dir/src/Layer.cpp.o"
+  "CMakeFiles/openann.dir/src/NeuralNetwork.cpp.o"
   "openann.pdb"
   "openann"
 )

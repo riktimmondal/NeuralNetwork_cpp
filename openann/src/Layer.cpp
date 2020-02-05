@@ -14,21 +14,21 @@ void Layer::setVal(int i, double v) {
 }
 
 Matrix *Layer::matrixifyVals() {
-    Matrix *m = new Matrix(1, this->neurons.size, false);
+    Matrix *m = new Matrix(1, this->neurons.size(), false);
     for(int i=0;i<this->neurons.size();i++) {
         m->setValue(1, i, this->neurons.at(i)->getVal());
     }
 }
 
-Matrix *Layer::matrixifyVals() {
-    Matrix *m = new Matrix(1, this->neurons.size, false);
+Matrix *Layer::matrixifyActivatedVals() {
+    Matrix *m = new Matrix(1, this->neurons.size(), false);
     for(int i=0;i<this->neurons.size();i++) {
         m->setValue(1, i, this->neurons.at(i)->getActivatedVal());
     }
 }
 
-Matrix *Layer::matrixifyVals() {
-    Matrix *m = new Matrix(1, this->neurons.size, false);
+Matrix *Layer::matrixifyDerivedVals() {
+    Matrix *m = new Matrix(1, this->neurons.size(), false);
     for(int i=0;i<this->neurons.size();i++) {
         m->setValue(1, i, this->neurons.at(i)->getDerivedVal());
     }
