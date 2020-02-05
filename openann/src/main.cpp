@@ -25,4 +25,5 @@ int main(int argc, char **argv) {
     vector<double> input{1.0,0.0,1.0};
     NeuralNetwork *nn = new NeuralNetwork(topology);
     nn->setCurrentInput(input);
+    nn->printToConsole();
 }

@@ -22,3 +22,16 @@ void NeuralNetwork::setCurrentInput(vector<double> input) {
         this->layers.at(0)->setVal(i, input.at(i));
     }
 }
+
+void NeuralNetwork::printToConsole() {
+     for(int i=0;i<this->layers.size();i++) {
+         cout<<"LAYER: " << i << endl;
+         if(i==0) {
+             Matrix *m = this->layers.at(i)->matrixifyVals();
+             m->printToConsole();
+         } else {
+             Matrix *m = this->layers.at(i)->matrixifyActivatedVals();
+             m->printToConsole();
+         }
+     }
+}
