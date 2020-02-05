@@ -7,6 +7,11 @@ Neuron::Neuron(double val) {
     derive();
 }
 
+void Neuron::setVal(double val) {
+    this->val = val;
+    activate();
+    derive();
+}
 void Neuron::activate() {
     this->activatedVal = this->val / (1 + abs(this->val));
 }

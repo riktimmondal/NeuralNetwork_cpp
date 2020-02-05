@@ -6,11 +6,23 @@
 
 #IncludeRegexTransform: 
 
+/home/riktim/Music/NeuralNetwork_cpp/openann/include/Matrix.hpp
+iostream
+-
+vector
+-
+random
+-
+
 /home/riktim/Music/NeuralNetwork_cpp/openann/include/Neuron.hpp
 iostream
 -
 math.h
 -
+
+/home/riktim/Music/NeuralNetwork_cpp/openann/src/Matrix.cpp
+../include/Matrix.hpp
+/home/riktim/Music/NeuralNetwork_cpp/openann/include/Matrix.hpp
 
 /home/riktim/Music/NeuralNetwork_cpp/openann/src/Neuron.cpp
 ../include/Neuron.hpp
@@ -21,4 +33,6 @@ iostream
 -
 ../include/Neuron.hpp
 /home/riktim/Music/NeuralNetwork_cpp/openann/include/Neuron.hpp
+../include/Matrix.hpp
+/home/riktim/Music/NeuralNetwork_cpp/openann/include/Matrix.hpp
 

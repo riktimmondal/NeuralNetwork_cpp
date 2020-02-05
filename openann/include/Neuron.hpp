@@ -10,6 +10,8 @@ class Neuron
     public:
         Neuron(double val);
 
+        void setVal(double v);
+
         //sigmoid 
         void activate();
 
