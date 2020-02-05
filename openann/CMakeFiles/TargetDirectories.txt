@@ -1,0 +1,3 @@
+/home/riktim/Music/NeuralNetwork_cpp/openann/CMakeFiles/rebuild_cache.dir
+/home/riktim/Music/NeuralNetwork_cpp/openann/CMakeFiles/openann.dir
+/home/riktim/Music/NeuralNetwork_cpp/openann/CMakeFiles/edit_cache.dir

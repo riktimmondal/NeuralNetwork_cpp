@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/riktim/Music/NeuralNetwork_cpp/openann/include/Neuron.hpp
+iostream
+-
+math.h
+-
+
+/home/riktim/Music/NeuralNetwork_cpp/openann/src/Neuron.cpp
+../include/Neuron.hpp
+/home/riktim/Music/NeuralNetwork_cpp/openann/include/Neuron.hpp
+
+/home/riktim/Music/NeuralNetwork_cpp/openann/src/main.cpp
+iostream
+-
+../include/Neuron.hpp
+/home/riktim/Music/NeuralNetwork_cpp/openann/include/Neuron.hpp
+
