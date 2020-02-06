@@ -14,6 +14,7 @@ CMakeFiles/openann.dir/src/NeuralNetwork.cpp.o
  /home/riktim/Music/NeuralNetwork_cpp/openann/include/Matrix.hpp
  /home/riktim/Music/NeuralNetwork_cpp/openann/include/NeuralNetwork.hpp
  /home/riktim/Music/NeuralNetwork_cpp/openann/include/Neuron.hpp
+ /home/riktim/Music/NeuralNetwork_cpp/openann/include/utils/MultiplyMatrix.hpp
  /home/riktim/Music/NeuralNetwork_cpp/openann/src/NeuralNetwork.cpp
 CMakeFiles/openann.dir/src/Neuron.cpp.o
  /home/riktim/Music/NeuralNetwork_cpp/openann/include/Neuron.hpp
@@ -23,4 +24,9 @@ CMakeFiles/openann.dir/src/main.cpp.o
  /home/riktim/Music/NeuralNetwork_cpp/openann/include/Matrix.hpp
  /home/riktim/Music/NeuralNetwork_cpp/openann/include/NeuralNetwork.hpp
  /home/riktim/Music/NeuralNetwork_cpp/openann/include/Neuron.hpp
+ /home/riktim/Music/NeuralNetwork_cpp/openann/include/utils/MultiplyMatrix.hpp
  /home/riktim/Music/NeuralNetwork_cpp/openann/src/main.cpp
+CMakeFiles/openann.dir/src/utils/MultiplyMatrix.cpp.o
+ /home/riktim/Music/NeuralNetwork_cpp/openann/include/Matrix.hpp
+ /home/riktim/Music/NeuralNetwork_cpp/openann/include/utils/MultiplyMatrix.hpp
+ /home/riktim/Music/NeuralNetwork_cpp/openann/src/utils/MultiplyMatrix.cpp

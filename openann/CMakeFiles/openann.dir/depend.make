@@ -13,6 +13,7 @@ CMakeFiles/openann.dir/src/NeuralNetwork.cpp.o: include/Layer.hpp
 CMakeFiles/openann.dir/src/NeuralNetwork.cpp.o: include/Matrix.hpp
 CMakeFiles/openann.dir/src/NeuralNetwork.cpp.o: include/NeuralNetwork.hpp
 CMakeFiles/openann.dir/src/NeuralNetwork.cpp.o: include/Neuron.hpp
+CMakeFiles/openann.dir/src/NeuralNetwork.cpp.o: include/utils/MultiplyMatrix.hpp
 CMakeFiles/openann.dir/src/NeuralNetwork.cpp.o: src/NeuralNetwork.cpp
 
 CMakeFiles/openann.dir/src/Neuron.cpp.o: include/Neuron.hpp
@@ -22,5 +23,10 @@ CMakeFiles/openann.dir/src/main.cpp.o: include/Layer.hpp
 CMakeFiles/openann.dir/src/main.cpp.o: include/Matrix.hpp
 CMakeFiles/openann.dir/src/main.cpp.o: include/NeuralNetwork.hpp
 CMakeFiles/openann.dir/src/main.cpp.o: include/Neuron.hpp
+CMakeFiles/openann.dir/src/main.cpp.o: include/utils/MultiplyMatrix.hpp
 CMakeFiles/openann.dir/src/main.cpp.o: src/main.cpp
+
+CMakeFiles/openann.dir/src/utils/MultiplyMatrix.cpp.o: include/Matrix.hpp
+CMakeFiles/openann.dir/src/utils/MultiplyMatrix.cpp.o: include/utils/MultiplyMatrix.hpp
+CMakeFiles/openann.dir/src/utils/MultiplyMatrix.cpp.o: src/utils/MultiplyMatrix.cpp
 

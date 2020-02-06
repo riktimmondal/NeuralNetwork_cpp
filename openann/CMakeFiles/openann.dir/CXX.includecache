@@ -31,6 +31,8 @@ Matrix.hpp
 /home/riktim/Music/NeuralNetwork_cpp/openann/include/Matrix.hpp
 Layer.hpp
 /home/riktim/Music/NeuralNetwork_cpp/openann/include/Layer.hpp
+utils/MultiplyMatrix.hpp
+/home/riktim/Music/NeuralNetwork_cpp/openann/include/utils/MultiplyMatrix.hpp
 vector
 -
 
@@ -39,6 +41,16 @@ iostream
 -
 math.h
 -
+
+/home/riktim/Music/NeuralNetwork_cpp/openann/include/utils/MultiplyMatrix.hpp
+iostream
+-
+vector
+-
+assert.h
+-
+../Matrix.hpp
+/home/riktim/Music/NeuralNetwork_cpp/openann/include/Matrix.hpp
 
 /home/riktim/Music/NeuralNetwork_cpp/openann/src/Layer.cpp
 ../include/Layer.hpp
@@ -65,4 +77,10 @@ iostream
 /home/riktim/Music/NeuralNetwork_cpp/openann/include/Matrix.hpp
 ../include/NeuralNetwork.hpp
 /home/riktim/Music/NeuralNetwork_cpp/openann/include/NeuralNetwork.hpp
+../include/utils/MultiplyMatrix.hpp
+/home/riktim/Music/NeuralNetwork_cpp/openann/include/utils/MultiplyMatrix.hpp
+
+/home/riktim/Music/NeuralNetwork_cpp/openann/src/utils/MultiplyMatrix.cpp
+../../include/utils/MultiplyMatrix.hpp
+/home/riktim/Music/NeuralNetwork_cpp/openann/include/utils/MultiplyMatrix.hpp
 
