@@ -21,12 +21,16 @@ int main(int argc, char **argv) {
     t->printToConsole();
     return 0;*/
 
-    vector<int> topology{3,2,1};
+    vector<int> topology{3,2,3};
 
     vector<double> input{1.0,0.0,1.0};
     NeuralNetwork *nn = new NeuralNetwork(topology);
     nn->setCurrentInput(input);
-    //nn->printToConsole();
+    nn->setCurrentTarget(input);
     nn->feedForward();
+    nn->setErrors();
     nn->printToConsole();
+
+    cout<< "Total Error: "<< nn->getTotalError()<<endl;
+
 }

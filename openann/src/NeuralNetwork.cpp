@@ -23,6 +23,13 @@ void NeuralNetwork::setCurrentInput(vector<double> input) {
     }
 }
 
+void NeuralNetwork::setCurrentTarget(vector<double> target) {
+    this->target = target;
+    for(int i=0;i<target.size();i++) {
+        this->layers.at(this->layers.size()-1)->setVal(i, target.at(i));
+    }
+}
+
 void NeuralNetwork::printToConsole() {
      for(int i=0;i<this->layers.size();i++) {
          cout<<"LAYER: " << i << endl;
@@ -57,4 +64,25 @@ void NeuralNetwork::feedForward() {
             this->setNeuronValue(i+1, c_index, c->getValue(0, c_index));
         }
     }
+}
+
+void NeuralNetwork::setErrors() {
+    if(this->target.size() == 0 ) {
+        cerr<< "No target for this neural network"<<endl;
+        assert(false);
+    }
+    if(this->target.size() != this->layers.at(this->layers.size()-1)->getNeurons().size()) {
+        cerr<< "Target size is not the same as output size: "<< this->layers.at(this->layers.size()-1)->getNeurons().size()<<endl;
+        assert(false);
+    }
+    this->error = 0.0;
+    int outputLayerIndex = this->layers.size() - 1;
+    vector<Neuron *> outputNeurons = this->layers.at(outputLayerIndex)->getNeurons();
+    for(int i=0;i<this->target.size();i++) {
+         double tempErr = (outputNeurons.at(i)->getActivatedVal() - target.at(i));
+         this->errors.push_back(tempErr);
+         this->error += tempErr;
+    } 
+
+    this->historicalErrors.push_back(this->error);
 }
