@@ -27,10 +27,25 @@ int main(int argc, char **argv) {
     NeuralNetwork *nn = new NeuralNetwork(topology);
     nn->setCurrentInput(input);
     nn->setCurrentTarget(input);
-    nn->feedForward();
-    nn->setErrors();
-    nn->printToConsole();
+    
+     //train
+    for(int i=0;i<20;i++) {
+        cout<<"EPOCH: "<<i<<endl;
+        nn->feedForward();
+        nn->setErrors();
+        cout<< "Total Error "<< nn->getTotalError()<<endl;
+        nn->backPropagation();
 
-    cout<< "Total Error: "<< nn->getTotalError()<<endl;
+        cout<< "=============\n";
+        cout<<"OUTPUT\n";
+        nn->printOutputToConsole();
+
+        cout<<"TARGET\n";
+        nn->printTargetToConsole();
+        cout<< "=============\n\n";
+
+
+    }
+    return 0;
 
 }

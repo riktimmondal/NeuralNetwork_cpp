@@ -31,6 +31,8 @@ Matrix.hpp
 /home/riktim/Music/NeuralNetwork_cpp/openann/include/Matrix.hpp
 Layer.hpp
 /home/riktim/Music/NeuralNetwork_cpp/openann/include/Layer.hpp
+algorithm
+-
 utils/MultiplyMatrix.hpp
 /home/riktim/Music/NeuralNetwork_cpp/openann/include/utils/MultiplyMatrix.hpp
 vector

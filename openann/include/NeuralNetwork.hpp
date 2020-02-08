@@ -4,6 +4,7 @@
 #include <iostream>
 #include "Matrix.hpp"
 #include "Layer.hpp"
+#include <algorithm>
 #include "utils/MultiplyMatrix.hpp"
 #include <vector>
 
@@ -16,6 +17,7 @@ class NeuralNetwork {
         void setCurrentTarget(vector<double> target);
         void printToConsole();
         void feedForward();
+        void backPropagation();
         void setErrors();
 
         Matrix *getNeuronMatrix(int index) { return this->layers.at(index)->matrixifyVals(); }
@@ -26,11 +28,16 @@ class NeuralNetwork {
 
         double getTotalError() { return this->error; }
         vector<double> getErrors() { return this->errors; }
+
+        void printInputToConsole();
+        void printOutputToConsole();
+        void printTargetToConsole();
     private:
         int             topologySize;
         vector<int>     topology;
         vector<Layer *>  layers;
         vector<Matrix *> weightMatrices;
+        vector<Matrix *> gradientMatrices;
         vector<double>   input;
         vector<double>   target;
         double           error;
